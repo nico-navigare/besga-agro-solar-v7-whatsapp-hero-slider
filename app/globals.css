@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900 antialiased;
+}
+
+a {
+  @apply underline-offset-4;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-5 lg:px-6;
+  }
+
+  .section-space {
+    @apply py-10 sm:py-12 lg:py-16;
+  }
+
+  .touch-target {
+    @apply min-h-11 min-w-11;
+  }
+}
